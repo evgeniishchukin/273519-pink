@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Евгений Щукин](https://up.htmlacademy.ru/adaptive/12/user/273519).
-* Наставник: `Неизвестно`.
+* Наставник: `Отсутствует`.
 
 ---
 
