@@ -2,11 +2,287 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="header">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="logo" href="index.html">
+              <span class="logo__text">Pink</span>
+              <img class="logo__img logo__img--desktop" alt="Logo" width="147" height="40" src="http://placehold.it/147x40">
+              <img class="logo__img logo__img--tablet" alt="Logo" width="147" height="40" src="http://placehold.it/147x40">
+            </a>
+            <button class="main-nav__toggle">Меню</button>
+          </li>
+          <li class="main-nav__item"><a class="main-nav__item-link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__item-link" href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__item-link" href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__item-link" href="https://htmlacademy.ru/">HTML Academy</a></li>
+        </ul>
+      </nav>
+      <section class="download-app">
+        <h2 class="download-app__header">Взгляните на жизнь иначе</h2>
+        <a class="download-app__link">Скачать приложение</a>
+        <div class="download-app__platfroms">
+          <a class="download-app__platform" href="#">Приложение для iPhone</a>
+          <a class="download-app__platform" href="#">Приложение для Android</a>
+          <a class="download-app__platform" href="#">Приложение для Windows Phone</a>
+        </div>
+        <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+    </header>
+    <main class="main">
+      <section class="advantages">
+        <h2 class="advantages__header">Преимущества</h2>
+        <div class="advantages__text-block">
+          <p class="advantages__text">Устали от серости мегаполиса?</p>
+          <p class="advantages__text">Нам есть, что вам предложить!</p>
+        </div>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <img class="advantages__item-img" alt="Изображение до применения фильтра" width="186" height="301" src="http://placehold.it/186x301">
+            <h3 class="advantages__item-header">Поднимает настроение</h3>
+            <p class="advantages__item-text">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </li>
+          <li class="advantages__item">
+            <img class="advantages__item-img" alt="Изображение с применением фильтра" width="186" height="301" src="http://placehold.it/186x301">
+            <h3 class="advantages__item-header">Меняет мир вокруг</h3>
+            <p class="advantages__item-text">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
+          </li>
+          <li class="advantages__item">
+            <img class="advantages__item-img" alt="Изображение c добавлением смайла" width="186" height="301" src="http://placehold.it/186x301">
+            <h3 class="advantages__item-header">Заводит новых друзей</h3>
+            <p class="advantages__item-text">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="research">
+        <h2 class="research__header">Эффект на 24 часа!</h2>
+        <p>
+          Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+        </p>
+        <a class="research__link" href="#">Узнать больше об исследовании</a>
+      </section>
+      <section class="reviews">
+        <h2 class="reviews__header">Отзывы</h2>
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <div class="reviews__author">
+              <span class="reviews__author-name">Николай Петров</span>
+              <p class="reviews__author-description">
+                25 лет, водитель трамвая
+              </p>
+            </div>
+            <p class="reviews__text">
+              Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+            </p>
+          </li>
+          <li class="reviews__item">
+            <div class="reviews__author">
+              <span class="reviews__author-name">Игнат Адольфович</span>
+              <p class="reviews__author-description">
+                31 год, профессиональный зануда
+              </p>
+            </div>
+            <p class="reviews__text">
+              Я думала, что раз тут слайдер, то к нему будут данные в шаблоне!
+            </p>
+          </li>
+          <li class="reviews__item">
+            <div class="reviews__author">
+              <span class="reviews__author-name">Сюзанна Погремушкина</span>
+              <p class="reviews__author-description">
+                26 лет, диванный аналитик
+              </p>
+            </div>
+            <p class="reviews__text">
+              Согласен с предыдущим отзывом! Где данные для слайдера?
+            </p>
+          </li>
+        </ul>
+        <button class="reviews__button reviews__button--left">Предыдущий комментарий</button>
+        <button class="reviews__button reviews__button--left">Предыдущий комментарий</button>
+        <div class="reviews__switches">
+          <label class="reviews__label">
+            <input class="reviews__input" id="switch_on_first_review" name="switch_review" type="radio">
+            <span class="reviews__indicator">Переключить на первый отзыв</span>
+          </label>
+          <label class="reviews__label">
+            <input class="reviews__input" id="switch_on_second_review" name="switch_review" type="radio" checked>
+            <span class="reviews__indicator">Переключить на второй отзыв</span>
+          </label>
+          <label class="reviews__label">
+            <input class="reviews__input" id="switch_on_third_review" name="switch_review" type="radio">
+            <span class="reviews__indicator">Переключить на третий отзыв</span>
+          </label>
+        </div>
+      </section>
+      <section class="offers">
+        <h2 class="offers__header">Предложения</h2>
+        <table class="offers__table">
+          <thead class="offers__table-head">
+            <tr class="offers__table-row">
+              <td class="offers__table-cell">
+                Функционал
+              </td>
+              <td class="offers__table-cell">
+                <h3 class="offers__offer">База</h3>
+                <span class="offers__cost">1,99 USD</span>
+              </td>
+              <td class="offers__table-cell">
+                <h3 class="offers__offer">Стандарт</h3>
+                <span class="offers__cost">3,99 USD</span>
+              </td>
+              <td class="offers__table-cell">
+                <h3 class="offers__offer">Анлим</h3>
+                <span class="offers__cost">9,99 USD</span>
+              </td>
+            </tr>
+          </thead>
+          <tbody class="offers__table-body">
+            <tr class="offers__table-row">
+              <td class="offers__table-cell">
+                Розовый фильтр
+              </td>
+              <td class="offers__table-cell">
+                <span class="offers__feature">Розовый фильтр</span>
+                <div class="offers__presence-block">
+                  <span class="offers__presence-text">Есть</span>
+                </div>
+              </td>
+              <td class="offers__table-cell">
+                <span class="offers__feature">Розовый фильтр</span>
+                <div class="offers__presence-block">
+                  <span class="offers__presence-text">Есть</span>
+                </div>
+              </td>
+              <td class="offers__table-cell">
+                <span class="offers__feature">Розовый фильтр</span>
+                <div class="offers__presence-block">
+                  <span class="offers__presence-text">Есть</span>
+                </div>
+              </td>
+            </tr>
+            <tr class="offers__table-row">
+              <td class="offers__table-cell">
+                Смайлики
+              </td>
+              <td class="offers__table-cell">
+                <span class="offers__feature">Смайлики</span>
+                <div class="offers__presence-block">
+                  <span class="offers__presence-text">Отсутствуют</span>
+                </div>
+              </td>
+              <td class="offers__table-cell">
+                <span class="offers__feature">Смайлики</span>
+                <div class="offers__presence-block">
+                  <span class="offers__presence-text">Есть</span>
+                </div>
+              </td>
+              <td class="offers__table-cell">
+                <span class="offers__feature">Смайлики</span>
+                <div class="offers__presence-block">
+                  <span class="offers__presence-text">Есть</span>
+                </div>
+              </td>
+            </tr>
+            <tr class="offers__table-row">
+              <td class="offers__table-cell">
+                Комментарии
+              </td>
+              <td class="offers__table-cell">
+                <span class="offers__feature">Комментарии</span>
+                <div class="offers__presence-block">
+                  <span class="offers__presence-text">Отсутствуют</span>
+                </div>
+              </td>
+              <td class="offers__table-cell">
+                <span class="offers__feature">Комментарии</span>
+                <div class="offers__presence-block">
+                  <span class="offers__presence-text">Отсутствуют</span>
+                </div>
+              </td>
+              <td class="offers__table-cell">
+                <span class="offers__feature">Комментарии</span>
+                <div class="offers__presence-block">
+                  <span class="offers__presence-text">Есть</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="offers__switches">
+          <label class="offers__label">
+            <input class="offers__input" id="switch_on_first_offer" name="switch_offer" type="radio">
+            <span class="offers__indicator">Переключить на первое предложение</span>
+          </label>
+          <label class="offers__label">
+            <input class="offers__input" id="switch_on_second_offer" name="switch_offer" type="radio" checked>
+            <span class="offers__indicator">Переключить на второе предложение</span>
+          </label>
+          <label class="offers__label">
+            <input class="offers__input" id="switch_on_third_offer" name="switch_offer" type="radio">
+            <span class="offers__indicator">Переключить на третье предложение</span>
+          </label>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__header">Контактная информация</h2>
+        <div class="contacts__text-block">
+          <p class="contacts__text">Остались вопросы?</p>
+          <p class="contacts__text">Свяжитесь с нами!</p>
+        </div>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <span class="contacts__action">Звоните:</span>
+            <a class="contacts__link" href="tel:+78125556666">+7(812)555-66-66</a>
+          </li>
+          <li class="contacts__item">
+            <span class="contacts__action">Пишите:</span>
+            <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contacts__item">
+            <span class="contacts__action">Приезжайте в гости</span>
+            <a class="contacts__link" href="#">ул. Большая Конюшенная, 19/8</a>
+          </li>
+        </ul>
+        <div class="contacts__map-block">
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo-block">
+        <span class="footer__logo-text">Pink</span>
+        <img class="footer__logo footer__logo--desktop" alt="Logo" width="147" height="40" src="http://placehold.it/147x40">
+        <img class="footer__logo footer__logo--tablet" alt="Logo" width="147" height="40" src="http://placehold.it/147x40">
+      </div>
+      <div class="footer__socials">
+        <a class="footer__social-link" href="#">
+          <span class="footer__social-name">Twitter</span>
+        </a>
+        <a class="footer__social-link" href="#">
+          <span class="footer__social-name">Facebook</span>
+        </a>
+        <a class="footer__social-link" href="#">
+          <span class="footer__social-name">Youtube</span>
+        </a>
+      </div>
+      <div class="footer__developer">
+        <a class="footer__developer-link" href="#">
+          <span class="footer__developer-text">Разработано</span>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
