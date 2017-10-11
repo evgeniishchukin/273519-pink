@@ -12,3 +12,21 @@
   padding-left: $desktop-padding;
   padding-right: $desktop-padding;
 }
+
+@mixin open-sans-regular {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin open-sans-bold {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin open-sans-light {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}

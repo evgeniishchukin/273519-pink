@@ -1,9 +1,11 @@
 $mobile-width: 320px;
-$tablet-widths: 660px;
-$desktop-widths: 960px;
+$tablet-width: 660px;
+$desktop-width: 960px;
 $large-desktop: 1400px;
 
-$mobile-padding: 5%;
-$tablet-padding: 10%;
-$desktop-padding: 15%;
-$large-padding: 20%;
+$mobile-padding: 6.25%;
+$tablet-padding: 3.03030303030303%;
+$desktop-padding: 10.83333333333333%;
+
+$header-min-height-mobile: 70px;
+$header-min-height-tablet: 110px;
