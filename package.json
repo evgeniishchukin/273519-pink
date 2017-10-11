@@ -4,22 +4,24 @@
   "private": true,
   "description": "Личный проект «Пинк» от HTML Academy",
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "7.1.x",
     "browser-sync": "2.18.x",
     "gulp": "3.9.x",
     "gulp-plumber": "1.1.x",
     "gulp-postcss": "7.0.x",
     "gulp-sass": "3.1.x",
-    "@htmlacademy/editorconfig-cli": "1.x",
+    "node-normalize-scss": "^3.0.0",
     "stylelint": "8.1.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "0.1.x",
+    "node-normalize-scss": "3.0.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint 'sass/**/*.scss' --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp style",
-    "start": "gulp serve"
+    "start": "npm run build && gulp serve"
   },
   "browserslist": [
     "last 2 versions",
