@@ -1,0 +1,14 @@
+@mixin mobile-padding {
+  padding-left: $mobile-padding;
+  padding-right: $mobile-padding;
+}
+
+@mixin tablet-padding {
+  padding-left: $tablet-padding;
+  padding-right: $tablet-padding;
+}
+
+@mixin desktop-padding {
+  padding-left: $desktop-padding;
+  padding-right: $desktop-padding;
+}
