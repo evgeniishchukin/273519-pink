@@ -115,6 +115,17 @@ gulp.task("symbols", function() {
     .pipe(gulp.dest("build/img"));
   });
 
+gulp.task('copy-html', function () {
+  return gulp.src('*.html')
+    .pipe(gulp.dest('build'))
+    .pipe(server.stream());
+});
+
+gulp.task('js-watch', ['scripts'], function (done) {
+  server.reload();
+  done();
+});
+
 gulp.task("build", function(fn) {
     run(
       "clean",
@@ -133,11 +144,15 @@ gulp.task("serve", ["style"], function() {
     server: "./build",
     notify: false,
     open: true,
-    cors: true,
+    port: 3502,
     ui: false
   });
 
-  gulp.watch("js/**/*.js", ["scripts", server.reload]);
-  gulp.watch("sass/**/*.{scss,sass}", ["style", server.reload]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("sass/**/*.{scss,sass}", ["style"]);
+  gulp.watch("js/**/*.js", ["scripts"]);
+  gulp.watch("*.html").on("change", (e) => {
+    if (e.type !== 'deleted') {
+      gulp.start('copy-html');
+    }
+  });
 });
